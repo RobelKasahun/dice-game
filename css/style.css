@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.box,
+.empty-box {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    position: absolute;
+    background-color: gold;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.dice {
+    display: flex;
+    flex-direction: row;
+}
+
+.dice>#dice-one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dice>#dice-two {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.dice-two>.first,
+.second-player-dice>#dice-two>.first {
+    align-self: flex-start;
+    position: absolute;
+}
+
+#sub-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+.dice-two>#sub-div>.second {
+    align-self: flex-end;
+}
+
+.dice>#dice-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dice>#dice-three>.second {
+    align-self: center;
+}
+
+.dice>#dice-three>.third {
+    align-self: flex-end;
+}
+
+.dice>#dice-four {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dice>#dice-four>#first-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dice>#dice-four>#second-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.circle {
+    background-color: #090909;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.dice>#dice-five {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dice>#dice-five>#mid-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dice>#dice-five>#first-div,
+#second-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dice>#dice-six {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dice>#dice-six>#first-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#dices>.dice {
+    align-items: center;
+}
+
+#first-player,
+#second-player {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+}
+
+#button {
+    background-color: gold;
+    width: 400px;
+    display: block;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+    top: 650px;
+    font-size: 20px;
+    border: none;
+    font-family: "Montserrat", sans-serif,
+            system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+            border-radius: 10px;
+}
+
+.player {
+    position: relative;
+    left: 220px;
+    z-index: 10000000000000;
+    top: -50px;
+    font-family: "Montserrat", sans-serif,
+        system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+#result {
+    font-size: 80px;
+    position: relative;
+    text-align: center;
+    display: block;
+    top: 50px;
+    font-family: "Montserrat", sans-serif,
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
